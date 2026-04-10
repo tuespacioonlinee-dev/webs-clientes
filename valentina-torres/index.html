@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lic. Valentina Torres — Psicóloga en Palermo | Terapia Cognitivo-Conductual</title>
+<meta name="description" content="Lic. Valentina Torres — Psicóloga especializada en Terapia Cognitivo-Conductual. Consultas presenciales en Palermo, CABA y online. Adultos y parejas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --verde-oscuro:#3E4F44;
+    --verde-medio:#6A8370;
+    --verde-claro:#A9BEB0;
+    --terracota:#C17A5B;
+    --terracota-claro:#E0A385;
+    --crema:#F5F1EA;
+    --crema-oscuro:#EAE3D7;
+    --texto:#2C2E2B;
+    --texto-suave:#5A5D58;
+    --blanco:#FFFFFF;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',-apple-system,sans-serif;
+    background:var(--crema);
+    color:var(--texto);
+    line-height:1.65;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{font-family:'Fraunces',serif;font-weight:500;letter-spacing:-0.02em;color:var(--verde-oscuro)}
+  a{text-decoration:none;color:inherit}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 32px}
+
+  /* ---------- NAV ---------- */
+  nav{
+    position:fixed;top:0;left:0;right:0;
+    background:rgba(245,241,234,0.88);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+    z-index:100;
+    padding:18px 0;
+    border-bottom:1px solid rgba(62,79,68,0.08);
+  }
+  .nav-inner{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;padding:0 32px}
+  .brand{
+    font-family:'Fraunces',serif;
+    font-size:1.25rem;
+    font-weight:500;
+    color:var(--verde-oscuro);
+    letter-spacing:-0.01em;
+  }
+  .brand span{color:var(--terracota);font-style:italic}
+  .nav-links{display:flex;gap:36px;align-items:center;font-size:0.9rem}
+  .nav-links a{color:var(--texto-suave);transition:color 0.25s}
+  .nav-links a:hover{color:var(--verde-oscuro)}
+  .nav-cta{
+    background:var(--verde-oscuro);
+    color:var(--crema);
+    padding:10px 22px;
+    border-radius:999px;
+    font-size:0.85rem;
+    font-weight:500;
+    transition:all 0.3s;
+  }
+  .nav-cta:hover{background:var(--terracota);color:var(--crema)}
+  .nav-toggle{display:none;background:none;border:none;cursor:pointer;font-size:1.5rem;color:var(--verde-oscuro)}
+
+  /* ---------- HERO ASIMÉTRICO ---------- */
+  .hero{
+    padding-top:120px;
+    padding-bottom:100px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1.1fr 1fr;
+    gap:80px;
+    align-items:center;
+  }
+  .hero-text .eyebrow{
+    display:inline-block;
+    font-size:0.8rem;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color:var(--terracota);
+    margin-bottom:24px;
+    font-weight:500;
+  }
+  .hero-text h1{
+    font-size:clamp(2.5rem,5vw,4.2rem);
+    line-height:1.05;
+    margin-bottom:28px;
+  }
+  .hero-text h1 em{
+    font-style:italic;
+    color:var(--terracota);
+    font-weight:400;
+  }
+  .hero-text .lead{
+    font-size:1.15rem;
+    color:var(--texto-suave);
+    margin-bottom:40px;
+    max-width:490px;
+  }
+  .hero-buttons{display:flex;gap:16px;flex-wrap:wrap}
+  .btn-primary{
+    background:var(--verde-oscuro);
+    color:var(--crema);
+    padding:16px 32px;
+    border-radius:999px;
+    font-weight:500;
+    font-size:0.95rem;
+    transition:all 0.3s;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+  }
+  .btn-primary:hover{background:var(--terracota);transform:translateY(-2px)}
+  .btn-secondary{
+    background:transparent;
+    color:var(--verde-oscuro);
+    padding:16px 32px;
+    border-radius:999px;
+    font-weight:500;
+    font-size:0.95rem;
+    border:1.5px solid var(--verde-oscuro);
+    transition:all 0.3s;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+  }
+  .btn-secondary:hover{background:var(--verde-oscuro);color:var(--crema)}
+
+  .hero-image{
+    position:relative;
+    border-radius:280px 280px 20px 20px;
+    overflow:hidden;
+    aspect-ratio:3/4;
+    box-shadow:0 30px 60px -20px rgba(62,79,68,0.25);
+  }
+  .hero-image img{width:100%;height:100%;object-fit:cover}
+  .hero-decor{
+    position:absolute;
+    top:-40px;
+    right:-40px;
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    background:var(--terracota-claro);
+    z-index:-1;
+    opacity:0.6;
+  }
+  .hero-decor-2{
+    position:absolute;
+    bottom:-30px;
+    left:-30px;
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:var(--verde-claro);
+    z-index:-1;
+    opacity:0.5;
+  }
+
+  /* ---------- ENFOQUE ---------- */
+  .enfoque{
+    background:var(--crema-oscuro);
+    padding:90px 0;
+    border-radius:60px 60px 0 0;
+    margin-top:40px;
+  }
+  .enfoque-header{
+    text-align:center;
+    max-width:620px;
+    margin:0 auto 60px;
+  }
+  .enfoque-header .eyebrow{
+    font-size:0.8rem;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color:var(--terracota);
+    display:block;
+    margin-bottom:16px;
+  }
+  .enfoque-header h2{
+    font-size:clamp(2rem,3.5vw,2.8rem);
+    margin-bottom:20px;
+  }
+  .enfoque-header p{color:var(--texto-suave);font-size:1.05rem}
+  .enfoque-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+  }
+  .enfoque-card{
+    background:var(--crema);
+    padding:40px 32px;
+    border-radius:24px;
+    transition:transform 0.4s;
+  }
+  .enfoque-card:hover{transform:translateY(-6px)}
+  .enfoque-icon{
+    width:56px;
+    height:56px;
+    background:var(--verde-oscuro);
+    border-radius:16px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:22px;
+    color:var(--crema);
+  }
+  .enfoque-card:nth-child(2) .enfoque-icon{background:var(--terracota)}
+  .enfoque-card:nth-child(3) .enfoque-icon{background:var(--verde-medio)}
+  .enfoque-card h3{font-size:1.3rem;margin-bottom:12px}
+  .enfoque-card p{color:var(--texto-suave);font-size:0.95rem}
+
+  /* ---------- SOBRE MÍ ---------- */
+  .sobre{
+    padding:100px 0;
+    background:var(--crema-oscuro);
+  }
+  .sobre-grid{
+    display:grid;
+    grid-template-columns:0.7fr 1fr;
+    gap:70px;
+    align-items:center;
+  }
+  .sobre-img{
+    position:relative;
+    border-radius:20px;
+    overflow:hidden;
+    aspect-ratio:4/5;
+    box-shadow:0 20px 50px -15px rgba(62,79,68,0.2);
+  }
+  .sobre-img img{width:100%;height:100%;object-fit:cover}
+  .sobre-text .eyebrow{
+    font-size:0.8rem;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color:var(--terracota);
+    display:block;
+    margin-bottom:16px;
+  }
+  .sobre-text h2{
+    font-size:clamp(2rem,3.5vw,2.8rem);
+    margin-bottom:24px;
+    line-height:1.15;
+  }
+  .sobre-text p{
+    color:var(--texto-suave);
+    margin-bottom:18px;
+    font-size:1.02rem;
+  }
+  .sobre-stats{
+    display:flex;
+    gap:40px;
+    margin-top:36px;
+    padding-top:32px;
+    border-top:1px solid rgba(62,79,68,0.12);
+  }
+  .stat strong{
+    font-family:'Fraunces',serif;
+    display:block;
+    font-size:2.4rem;
+    color:var(--verde-oscuro);
+    line-height:1;
+    margin-bottom:6px;
+    font-weight:600;
+  }
+  .stat span{
+    font-size:0.85rem;
+    color:var(--texto-suave);
+    letter-spacing:0.05em;
+  }
+
+  /* ---------- ÁREAS ---------- */
+  .areas{
+    padding:100px 0;
+    background:var(--crema);
+  }
+  .areas-header{text-align:center;margin-bottom:60px}
+  .areas-header .eyebrow{
+    font-size:0.8rem;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color:var(--terracota);
+    display:block;
+    margin-bottom:16px;
+  }
+  .areas-header h2{
+    font-size:clamp(2rem,3.5vw,2.8rem);
+    max-width:620px;
+    margin:0 auto;
+  }
+  .areas-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+  }
+  .area{
+    background:var(--crema-oscuro);
+    padding:32px 28px;
+    border-radius:20px;
+    transition:all 0.35s;
+    border:1px solid transparent;
+  }
+  .area:hover{
+    background:var(--verde-oscuro);
+    border-color:var(--verde-oscuro);
+    transform:translateY(-4px);
+  }
+  .area:hover h4,.area:hover p{color:var(--crema)}
+  .area-num{
+    font-family:'Fraunces',serif;
+    font-size:0.95rem;
+    color:var(--terracota);
+    margin-bottom:14px;
+    display:block;
+    font-style:italic;
+  }
+  .area h4{
+    font-size:1.2rem;
+    margin-bottom:10px;
+    transition:color 0.35s;
+  }
+  .area p{
+    color:var(--texto-suave);
+    font-size:0.92rem;
+    transition:color 0.35s;
+  }
+
+  /* ---------- HONORARIOS ---------- */
+  .honor{
+    padding:100px 0;
+    background:var(--verde-oscuro);
+    color:var(--crema);
+  }
+  .honor-inner{
+    max-width:780px;
+    margin:0 auto;
+    text-align:center;
+  }
+  .honor .eyebrow{
+    font-size:0.8rem;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color:var(--terracota-claro);
+    display:block;
+    margin-bottom:16px;
+  }
+  .honor h2{
+    color:var(--crema);
+    font-size:clamp(2rem,3.5vw,2.8rem);
+    margin-bottom:20px;
+  }
+  .honor>.wrap>.honor-inner>p{
+    color:rgba(245,241,234,0.75);
+    margin-bottom:48px;
+  }
+  .honor-card{
+    background:rgba(245,241,234,0.07);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(245,241,234,0.15);
+    padding:50px 40px;
+    border-radius:32px;
+  }
+  .honor-price{
+    font-family:'Fraunces',serif;
+    font-size:clamp(2.8rem,5vw,4rem);
+    color:var(--terracota-claro);
+    line-height:1;
+    margin-bottom:10px;
+    font-weight:500;
+  }
+  .honor-sub{
+    font-size:0.95rem;
+    color:rgba(245,241,234,0.7);
+    margin-bottom:36px;
+    letter-spacing:0.03em;
+  }
+  .honor-features{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:16px 30px;
+    margin-bottom:40px;
+    text-align:left;
+  }
+  .honor-features li{
+    list-style:none;
+    font-size:0.94rem;
+    color:rgba(245,241,234,0.85);
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+  .honor-features li::before{
+    content:'';
+    width:6px;
+    height:6px;
+    background:var(--terracota-claro);
+    border-radius:50%;
+    flex-shrink:0;
+  }
+  .honor-card .btn-primary{
+    background:var(--terracota);
+  }
+  .honor-card .btn-primary:hover{background:var(--terracota-claro);color:var(--verde-oscuro)}
+
+  /* ---------- CONSULTORIO ---------- */
+  .consul{padding:100px 0;background:var(--crema)}
+  .consul-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+  }
+  .consul-img{
+    border-radius:20px;
+    overflow:hidden;
+    aspect-ratio:4/3;
+    box-shadow:0 20px 50px -15px rgba(62,79,68,0.2);
+  }
+  .consul-img img{width:100%;height:100%;object-fit:cover}
+  .consul-text .eyebrow{
+    font-size:0.8rem;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color:var(--terracota);
+    display:block;
+    margin-bottom:16px;
+  }
+  .consul-text h2{
+    font-size:clamp(2rem,3.5vw,2.6rem);
+    margin-bottom:24px;
+  }
+  .consul-details{
+    list-style:none;
+    margin-top:30px;
+  }
+  .consul-details li{
+    padding:18px 0;
+    border-bottom:1px solid rgba(62,79,68,0.1);
+    display:flex;
+    justify-content:space-between;
+    font-size:0.96rem;
+  }
+  .consul-details li strong{color:var(--verde-oscuro)}
+  .consul-details li span{color:var(--texto-suave)}
+
+  /* ---------- CONTACTO ---------- */
+  .contacto{
+    padding:100px 0 120px;
+    background:var(--crema-oscuro);
+    text-align:center;
+  }
+  .contacto .eyebrow{
+    font-size:0.8rem;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color:var(--terracota);
+    display:block;
+    margin-bottom:16px;
+  }
+  .contacto h2{
+    font-size:clamp(2.2rem,4vw,3.2rem);
+    margin-bottom:24px;
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .contacto h2 em{font-style:italic;color:var(--terracota);font-weight:400}
+  .contacto p{
+    color:var(--texto-suave);
+    max-width:560px;
+    margin:0 auto 40px;
+    font-size:1.05rem;
+  }
+  .contacto-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    background:var(--verde-oscuro);
+    color:var(--crema);
+    padding:50px 0 30px;
+    text-align:center;
+  }
+  footer .brand{color:var(--crema);margin-bottom:14px;display:inline-block}
+  footer .brand span{color:var(--terracota-claro)}
+  footer p{
+    font-size:0.85rem;
+    color:rgba(245,241,234,0.55);
+    margin-top:20px;
+  }
+  footer p a{color:var(--terracota-claro);text-decoration:underline}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media(max-width:900px){
+    .hero-grid,.sobre-grid,.consul-grid{grid-template-columns:1fr;gap:50px}
+    .enfoque-grid,.areas-grid{grid-template-columns:1fr}
+    .hero-image{max-width:400px;margin:0 auto}
+    .nav-links a:not(.nav-cta){display:none}
+    .honor-features{grid-template-columns:1fr}
+    .sobre-stats{flex-wrap:wrap;gap:24px}
+    .hero{padding-top:110px;padding-bottom:60px}
+    .enfoque,.sobre,.areas,.honor,.consul,.contacto{padding:70px 0}
+    .enfoque{border-radius:40px 40px 0 0}
+    .wrap{padding:0 22px}
+    .nav-inner{padding:0 22px}
+    .honor-card{padding:36px 26px}
+  }
+  @media(max-width:500px){
+    .hero-text h1{font-size:2.4rem}
+    .btn-primary,.btn-secondary{padding:14px 24px;font-size:0.9rem}
+    .hero-buttons{flex-direction:column;align-items:stretch}
+    .btn-primary,.btn-secondary{justify-content:center}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="brand">valentina <span>torres</span></a>
+    <div class="nav-links">
+      <a href="#enfoque">Enfoque</a>
+      <a href="#sobre">Sobre mí</a>
+      <a href="#areas">Áreas</a>
+      <a href="#honor">Honorarios</a>
+      <a href="https://wa.me/5491100000000?text=Hola%20Valentina,%20me%20gustar%C3%ADa%20agendar%20una%20consulta" class="nav-cta">Agendar consulta</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <span class="eyebrow">Psicología Cognitivo-Conductual</span>
+        <h1>Un espacio para <em>pensar</em>, sentir y transformar.</h1>
+        <p class="lead">Acompaño a adultos y parejas en procesos terapéuticos orientados al bienestar emocional, con herramientas concretas y un enfoque humano y científico.</p>
+        <div class="hero-buttons">
+          <a href="https://wa.me/5491100000000?text=Hola%20Valentina,%20me%20gustar%C3%ADa%20agendar%20una%20consulta" class="btn-primary">Agendar primera consulta →</a>
+          <a href="#sobre" class="btn-secondary">Conocer más</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-decor"></div>
+        <div class="hero-decor-2"></div>
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=900&q=80&auto=format&fit=crop" alt="Lic. Valentina Torres">
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ENFOQUE -->
+<section class="enfoque" id="enfoque">
+  <div class="wrap">
+    <div class="enfoque-header">
+      <span class="eyebrow">Mi enfoque</span>
+      <h2>Terapia con base científica<br>y calidez humana</h2>
+      <p>La Terapia Cognitivo-Conductual (TCC) es uno de los enfoques con mayor evidencia científica. Trabajamos juntos en identificar patrones de pensamiento y comportamiento para generar cambios reales y sostenibles.</p>
+    </div>
+    <div class="enfoque-grid">
+      <div class="enfoque-card">
+        <div class="enfoque-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 0-10 10c0 4 2 7 5 9l-1 3 4-2a10 10 0 0 0 2 0 10 10 0 0 0 10-10 10 10 0 0 0-10-10z"/><path d="M8 10h.01M12 10h.01M16 10h.01"/></svg>
+        </div>
+        <h3>Escucha activa</h3>
+        <p>Un espacio confidencial, sin juicios, donde cada persona puede expresarse con libertad y confianza.</p>
+      </div>
+      <div class="enfoque-card">
+        <div class="enfoque-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+        </div>
+        <h3>Herramientas prácticas</h3>
+        <p>Técnicas concretas y ejercicios aplicables al día a día para gestionar emociones y pensamientos.</p>
+      </div>
+      <div class="enfoque-card">
+        <div class="enfoque-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3>Acompañamiento cercano</h3>
+        <p>Un proceso colaborativo, respetuoso del tiempo y los objetivos de cada persona o pareja.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE MÍ -->
+<section class="sobre" id="sobre">
+  <div class="wrap">
+    <div class="sobre-grid">
+      <div class="sobre-img">
+        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=700&q=80&auto=format&fit=crop" alt="Consultorio de Valentina Torres">
+      </div>
+      <div class="sobre-text">
+        <span class="eyebrow">Sobre mí</span>
+        <h2>Más de 8 años acompañando procesos de cambio</h2>
+        <p>Soy Licenciada en Psicología egresada de la Universidad de Buenos Aires (UBA), con especialización en Terapia Cognitivo-Conductual por la Fundación Aiglé.</p>
+        <p>Mi trabajo se centra en crear un vínculo terapéutico sólido, donde cada persona pueda explorar sus dificultades con confianza y encontrar herramientas reales para transformar su vida cotidiana.</p>
+        <p>He trabajado en instituciones públicas y privadas, y actualmente atiendo en consulta particular en Palermo y en modalidad online.</p>
+        <div class="sobre-stats">
+          <div class="stat"><strong>8+</strong><span>Años de experiencia</span></div>
+          <div class="stat"><strong>450+</strong><span>Pacientes atendidos</span></div>
+          <div class="stat"><strong>UBA</strong><span>Universidad formadora</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ÁREAS -->
+<section class="areas" id="areas">
+  <div class="wrap">
+    <div class="areas-header">
+      <span class="eyebrow">Áreas de consulta</span>
+      <h2>Temáticas en las que acompaño</h2>
+    </div>
+    <div class="areas-grid">
+      <div class="area">
+        <span class="area-num">01</span>
+        <h4>Ansiedad y estrés</h4>
+        <p>Trastornos de ansiedad generalizada, ataques de pánico, fobias y manejo del estrés cotidiano.</p>
+      </div>
+      <div class="area">
+        <span class="area-num">02</span>
+        <h4>Depresión</h4>
+        <p>Estados depresivos, tristeza persistente, pérdida de motivación y duelos.</p>
+      </div>
+      <div class="area">
+        <span class="area-num">03</span>
+        <h4>Terapia de pareja</h4>
+        <p>Dificultades en la comunicación, conflictos recurrentes y procesos de separación.</p>
+      </div>
+      <div class="area">
+        <span class="area-num">04</span>
+        <h4>Autoestima</h4>
+        <p>Fortalecimiento personal, inseguridad, exigencia excesiva y autocuidado.</p>
+      </div>
+      <div class="area">
+        <span class="area-num">05</span>
+        <h4>Crisis vitales</h4>
+        <p>Cambios significativos, transiciones laborales, familiares o emocionales.</p>
+      </div>
+      <div class="area">
+        <span class="area-num">06</span>
+        <h4>Habilidades sociales</h4>
+        <p>Asertividad, comunicación efectiva y manejo de vínculos interpersonales.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HONORARIOS -->
+<section class="honor" id="honor">
+  <div class="wrap">
+    <div class="honor-inner">
+      <span class="eyebrow">Honorarios</span>
+      <h2>Un espacio accesible,<br>a tu ritmo</h2>
+      <p>Las consultas tienen una duración de 50 minutos y se adaptan a tus posibilidades horarias.</p>
+      <div class="honor-card">
+        <div class="honor-price">$35.000</div>
+        <div class="honor-sub">por sesión · 50 minutos</div>
+        <ul class="honor-features">
+          <li>Consultas presenciales en Palermo</li>
+          <li>Modalidad online por videollamada</li>
+          <li>Terapia individual y de pareja</li>
+          <li>Seguimiento personalizado</li>
+          <li>Primera entrevista exploratoria</li>
+          <li>Facturación disponible</li>
+        </ul>
+        <a href="https://wa.me/5491100000000?text=Hola%20Valentina,%20me%20gustar%C3%ADa%20agendar%20una%20consulta" class="btn-primary">Agendar por WhatsApp →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONSULTORIO -->
+<section class="consul">
+  <div class="wrap">
+    <div class="consul-grid">
+      <div class="consul-img">
+        <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=900&q=80&auto=format&fit=crop" alt="Consultorio en Palermo">
+      </div>
+      <div class="consul-text">
+        <span class="eyebrow">Consultorio</span>
+        <h2>Un espacio pensado para vos</h2>
+        <p>Mi consultorio está ubicado en el corazón de Palermo, en un entorno tranquilo y accesible, pensado para que te sientas cómoda desde que entrás.</p>
+        <ul class="consul-details">
+          <li><strong>Dirección</strong><span>Av. Santa Fe 3500, Palermo, CABA</span></li>
+          <li><strong>Horarios</strong><span>Lunes a viernes · 9 a 20hs</span></li>
+          <li><strong>Modalidad</strong><span>Presencial y online</span></li>
+          <li><strong>Duración</strong><span>50 minutos por sesión</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contacto">
+  <div class="wrap">
+    <span class="eyebrow">Contacto</span>
+    <h2>¿Listos para <em>empezar</em>?</h2>
+    <p>Escribime por WhatsApp o email y coordinamos juntos tu primera entrevista. Te respondo en el día.</p>
+    <div class="contacto-buttons">
+      <a href="https://wa.me/5491100000000?text=Hola%20Valentina,%20me%20gustar%C3%ADa%20agendar%20una%20consulta" class="btn-primary">WhatsApp →</a>
+      <a href="mailto:contacto@valentinatorres.com.ar" class="btn-secondary">contacto@valentinatorres.com.ar</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a href="#" class="brand">valentina <span>torres</span></a>
+    <p>© 2026 Lic. Valentina Torres · M.N. 00000 · Diseño por <a href="https://tuespacioonline.store" target="_blank" rel="noopener">Tu Espacio Online</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
