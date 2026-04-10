@@ -3,403 +3,913 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lic. El rey del sexo - Psicoanalista | San Miguel de Tucumán</title>
-    <meta name="description" content="Lic. El rey del sexo - Psicoanalista en San Miguel de Tucumán. Turnos online y presencial.">
-    <meta property="og:title" content="Lic. El rey del sexo - Psicoanalista">
-    <meta property="og:description" content="Psicoanalista en San Miguel de Tucumán. Solicitá tu turno.">
-    <meta property="og:type" content="website">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Lic. El rey del sexo - Psicoanalista en San Miguel de Tucumán</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
     <style>
-        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-        html{scroll-behavior:smooth;font-size:16px}
-        body{font-family:'Inter',sans-serif;color:#2d2d2d;background:#fafaf8;line-height:1.6}
-        img{display:block;max-width:100%}
-        a{text-decoration:none;color:inherit}
-        :root{--verde:#1D3557;--verde-claro:#457B9D;--verde-bg:#F0F8FF;--crema:#faf7f2;--texto:#2d2d2d;--gris:#6b7280;--borde:#e5e7e0;--sombra:0 4px 24px rgba(0,0,0,.08);--radio:14px}
-        header{background:#fff;border-bottom:1px solid var(--borde);position:sticky;top:0;z-index:100}
-        .nav{max-width:1100px;margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between}
-        .nav-logo{font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--verde);font-weight:600}
-        .nav-logo span{font-weight:400;color:var(--gris);font-size:.9rem;display:block}
-        .nav-links{display:flex;gap:32px;list-style:none}
-        .nav-links a{font-size:.9rem;font-weight:500;color:var(--gris);transition:color .2s}
-        .nav-links a:hover{color:var(--verde)}
-        .btn{display:inline-flex;align-items:center;gap:8px;background:var(--verde);color:#fff;padding:11px 24px;border-radius:50px;font-size:.9rem;font-weight:600;transition:background .2s,transform .15s;cursor:pointer;border:none}
-        .btn:hover{background:color-mix(in srgb,var(--verde) 85%,#000);transform:translateY(-1px)}
-        .btn-outline{background:transparent;color:var(--verde);border:2px solid var(--verde)}
-        .btn-outline:hover{background:var(--verde-bg);transform:translateY(-1px)}
-        .hero{background:var(--crema);padding:80px 24px 0;overflow:hidden}
-        .hero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end}
-        .hero-tag{display:inline-block;background:var(--verde-bg);color:var(--verde);font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:6px 14px;border-radius:50px;margin-bottom:20px}
-        .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4vw,3.2rem);line-height:1.2;color:var(--texto);margin-bottom:20px}
-        .hero h1 em{color:var(--verde);font-style:italic}
-        .hero p{font-size:1.05rem;color:var(--gris);max-width:480px;margin-bottom:36px;line-height:1.75}
-        .hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
-        .hero-img{position:relative;display:flex;justify-content:center;align-items:flex-end}
-        .hero-img-card{width:100%;max-width:420px;aspect-ratio:3/4;border-radius:20px 20px 0 0;overflow:hidden;position:relative}
-        .hero-badge{position:absolute;bottom:28px;left:-20px;background:#fff;border-radius:var(--radio);padding:14px 18px;box-shadow:var(--sombra);display:flex;align-items:center;gap:10px;font-size:.82rem;z-index:10}
-        .hero-badge .dot{width:10px;height:10px;background:#4ade80;border-radius:50%;flex-shrink:0}
-        .hero-badge strong{display:block;font-size:.88rem}
-        .trust{background:#fff;border-top:1px solid var(--borde);border-bottom:1px solid var(--borde);padding:24px}
-        .trust-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:40px;flex-wrap:wrap;justify-content:center}
-        .trust p{font-size:.8rem;color:#9ca3af;font-weight:500;letter-spacing:.06em;text-transform:uppercase}
-        .trust-items{display:flex;gap:32px;flex-wrap:wrap;align-items:center}
-        .trust-item{font-size:.82rem;color:var(--gris);font-weight:500;display:flex;align-items:center;gap:6px}
-        .stats{background:var(--verde);padding:48px 24px;color:#fff}
-        .stats-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center}
-        .stat-num{font-family:'Playfair Display',serif;font-size:3rem;font-weight:600;line-height:1;margin-bottom:8px}
-        .stat-label{font-size:.9rem;opacity:.8}
-        .section{padding:96px 24px}
-        .section-inner{max-width:1100px;margin:0 auto}
-        .section-tag{display:inline-block;background:var(--verde-bg);color:var(--verde);font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:6px 14px;border-radius:50px;margin-bottom:16px}
-        .section h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.25;margin-bottom:20px}
-        .section h2 em{color:var(--verde);font-style:italic}
-        .sobre-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
-        .sobre-img{border-radius:20px;aspect-ratio:1;position:relative;overflow:hidden;background:var(--verde-bg)}
-        .sobre-text p{color:var(--gris);margin-bottom:20px;line-height:1.8}
-        .sobre-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
-        .chip{background:var(--verde-bg);color:var(--verde);padding:7px 16px;border-radius:50px;font-size:.82rem;font-weight:500}
-        .servicios{background:var(--crema)}
-        .servicios-header{text-align:center;margin-bottom:56px}
-        .servicios-header p{color:var(--gris);max-width:540px;margin:0 auto}
-        .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
-        .card{background:#fff;border:1px solid var(--borde);border-radius:var(--radio);padding:32px 28px;transition:box-shadow .2s,transform .2s}
-        .card:hover{box-shadow:var(--sombra);transform:translateY(-4px)}
-        .card-icon{width:52px;height:52px;background:var(--verde-bg);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:20px}
-        .card h3{font-family:'Playfair Display',serif;font-size:1.2rem;margin-bottom:12px}
-        .card p{font-size:.88rem;color:var(--gris);line-height:1.7}
-        .card-precio{margin-top:20px;padding-top:20px;border-top:1px solid var(--borde);font-weight:600;color:var(--verde);font-size:.9rem}
-        .contacto-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
-        .contacto-info p{color:var(--gris);margin-bottom:32px;line-height:1.75}
-        .contacto-items{display:flex;flex-direction:column;gap:20px}
-        .contacto-item{display:flex;align-items:center;gap:14px;font-size:.92rem}
-        .contacto-item-icon{width:44px;height:44px;background:var(--verde-bg);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
-        .contacto-item strong{display:block;font-size:.8rem;color:var(--gris);font-weight:400;margin-bottom:2px}
-        .contacto-form{background:#fff;border:1px solid var(--borde);border-radius:20px;padding:40px;box-shadow:var(--sombra)}
-        .contacto-form h3{font-family:'Playfair Display',serif;font-size:1.4rem;margin-bottom:6px}
-        .contacto-form>p{font-size:.88rem;color:var(--gris);margin-bottom:28px}
-        .form-group{margin-bottom:18px}
-        .form-group label{font-size:.82rem;font-weight:500;margin-bottom:6px;display:block}
-        .form-group input,.form-group textarea,.form-group select{width:100%;padding:12px 14px;border:1.5px solid var(--borde);border-radius:10px;font-size:.9rem;font-family:'Inter',sans-serif;color:var(--texto);background:#fafafa;transition:border-color .2s;outline:none}
-        .form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--verde-claro);background:#fff}
-        .form-group textarea{resize:vertical;min-height:100px}
-        .btn-full{width:100%;justify-content:center;padding:14px;font-size:1rem}
-        .mapa-container{margin-top:40px;border-radius:var(--radio);overflow:hidden;border:1px solid var(--borde)}
-        .mapa-container iframe{width:100%;height:350px;border:0}
-        footer{background:#1a1f1e;color:rgba(255,255,255,.7);padding:56px 24px 28px}
-        .footer-inner{max-width:1100px;margin:0 auto}
-        .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.1);margin-bottom:28px}
-        .footer-brand p{font-size:.85rem;line-height:1.7;margin-top:14px;max-width:280px}
-        .footer-logo{font-family:'Playfair Display',serif;font-size:1.15rem;color:#fff}
-        .footer-col h4{color:#fff;font-size:.9rem;margin-bottom:16px}
-        .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
-        .footer-col a{font-size:.85rem;transition:color .2s}
-        .footer-col a:hover{color:#fff}
-        .footer-bottom{display:flex;justify-content:space-between;align-items:center;font-size:.8rem;flex-wrap:wrap;gap:12px}
-        .wa-fab{position:fixed;bottom:28px;right:28px;width:58px;height:58px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);z-index:300;transition:transform .2s;cursor:pointer}
-        .wa-fab:hover{transform:scale(1.08)}
-        .wa-fab svg{width:28px;height:28px}
-        .fade-in{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}
-        .fade-in.visible{opacity:1;transform:translateY(0)}
-        @media(max-width:900px){
-            .nav-links{display:none}
-            .hero-inner{grid-template-columns:1fr;gap:40px}
-            .hero-img{display:none}
-            .sobre-grid{grid-template-columns:1fr;gap:40px}
-            .sobre-img{max-width:300px;margin:0 auto}
-            .contacto-grid{grid-template-columns:1fr;gap:40px}
-            .footer-top{grid-template-columns:1fr;gap:32px}
-            .stats-inner{grid-template-columns:1fr;gap:32px}
+        :root {
+            --color-primario: #1E5FA8;
+            --color-secundario: #3B82C4;
+            --color-acento: #B8D4F0;
+            --color-fondo: #F0F6FC;
+            --color-fondo-oscuro: #0F2F54;
+            --color-texto: #0D2340;
+            --gradiente: linear-gradient(135deg, #1E5FA8, #3B82C4);
+            --sombra: rgba(30, 95, 168, 0.15);
         }
-        @media(max-width:600px){
-            .section{padding:64px 20px}
-            .hero{padding:48px 20px 0}
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--color-texto);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--color-primario);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            padding: 1rem 0;
+        }
+
+        .navbar.scrolled {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 2px 20px var(--sombra);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand {
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: var(--color-primario);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--color-texto);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--color-primario);
+        }
+
+        .btn-reservar {
+            background: var(--color-primario);
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn-reservar:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px var(--sombra);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--color-primario);
+            cursor: pointer;
+        }
+
+        .mobile-nav {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 2px 20px var(--sombra);
+            padding: 1rem;
+        }
+
+        .mobile-nav.active {
+            display: block;
+        }
+
+        .mobile-nav ul {
+            list-style: none;
+        }
+
+        .mobile-nav ul li {
+            margin-bottom: 1rem;
+        }
+
+        .mobile-nav ul li a {
+            text-decoration: none;
+            color: var(--color-texto);
+            font-weight: 500;
+            display: block;
+            padding: 0.5rem 0;
+        }
+
+        /* Hero */
+        .hero {
+            padding: 8rem 0 4rem;
+            background: linear-gradient(135deg, var(--color-fondo) 0%, white 100%);
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .hero-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .badge {
+            background: var(--color-acento);
+            color: var(--color-primario);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+        }
+
+        .matricula {
+            color: #666;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--color-primario);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px var(--sombra);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--color-primario);
+            padding: 0.8rem 1.5rem;
+            border: 2px solid var(--color-primario);
+            border-radius: 8px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-primario);
+            color: white;
+        }
+
+        .hero-illustration {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .illustration {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Secciones */
+        section {
+            padding: 4rem 0;
+        }
+
+        .sobre-mi {
+            background: var(--color-fondo);
+        }
+
+        .sobre-mi p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px var(--sombra);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            border-left: 4px solid var(--color-primario);
+        }
+
+        .stat-icon {
+            color: var(--color-primario);
+            width: 22px;
+            height: 22px;
+        }
+
+        /* Especialidades */
+        .especialidades-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .chip {
+            background: var(--color-acento);
+            color: var(--color-primario);
+            padding: 0.8rem 1.2rem;
+            border-radius: 25px;
+            border: 2px solid var(--color-primario);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .chip:hover {
+            background: var(--gradiente);
+            color: white;
+        }
+
+        /* Consulta */
+        .consulta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .consulta-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 20px var(--sombra);
+            border-left: 4px solid var(--color-primario);
+        }
+
+        .consulta-icon {
+            color: var(--color-primario);
+            width: 40px;
+            height: 40px;
+            margin-bottom: 1rem;
+        }
+
+        .terapia-tipos {
+            margin-top: 2rem;
+        }
+
+        .horario-info {
+            background: var(--color-acento);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        /* Precio */
+        .precio {
+            background: var(--color-fondo);
+        }
+
+        .precio-card {
+            background: var(--gradiente);
+            color: white;
+            padding: 3rem;
+            border-radius: 8px;
+            text-align: center;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .precio-amount {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+
+        .precio-lista {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .precio-lista li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Contacto */
+        .contacto {
+            background: var(--color-fondo-oscuro);
+            color: white;
+        }
+
+        .contacto h2,
+        .contacto p {
+            color: white;
+            text-align: center;
+        }
+
+        .contacto-content {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contacto-content p {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { 
+                transform: scale(1); 
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.3); 
+            }
+            50% { 
+                transform: scale(1.03); 
+                box-shadow: 0 0 0 8px transparent; 
+            }
+        }
+
+        .contacto-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .contacto-item {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            justify-content: center;
+        }
+
+        .contacto-item a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--color-texto);
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* Animaciones */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .consulta-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .section-center {
+            text-align: center;
+            margin-bottom: 3rem;
         }
     </style>
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <div class="nav-logo">
-                Lic. El rey del sexo
-                <span>Psicoanalista &middot; Mat. 72728282992</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#sobre">Sobre m&iacute;</a></li>
-                <li><a href="#especialidades">Especialidades</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#precios">Precios</a></li>
-                <li><a href="#turno">Turno</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-            <button class="btn" onclick="document.getElementById('turno').scrollIntoView()">
-                Reservar turno
-            </button>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <div class="hero-inner">
-            <div>
-                <span class="hero-tag">Psicoanalista &middot; San Miguel de Tucumán</span>
-                <h1>Un espacio seguro para <em>sanar y crecer</em></h1>
-                <p>Acompa&ntilde;amiento terap&eacute;utico profesional. Trabajamos juntos para que puedas atravesar los momentos dif&iacute;ciles y construir una vida m&aacute;s plena.</p>
-                <div class="hero-ctas">
-                    <button class="btn" onclick="document.getElementById('turno').scrollIntoView()">
-                        Reservar primera consulta
-                    </button>
-                    <button class="btn btn-outline" onclick="document.getElementById('sobre').scrollIntoView()">
-                        Conocerme mejor
-                    </button>
-                </div>
-            </div>
-            <div class="hero-img">
-                <div class="hero-img-card" style="background:#F0F8FF;display:flex;align-items:center;justify-content:center;">
-            <svg viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg" style="width:70%;opacity:0.6;">
-                <circle cx="100" cy="80" r="45" fill="#457B9D"/>
-                <ellipse cx="100" cy="200" rx="70" ry="55" fill="#457B9D"/>
-            </svg>
-        </div>
-                <div class="hero-badge">
-                    <span class="dot"></span>
-                    <div>
-                        <strong>Turnos disponibles</strong>
-                        Presencial y online
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="trust">
-        <div class="trust-inner">
-            <p>Formaci&oacute;n &amp; avales</p>
-            <div class="trust-items">
-                <div class="trust-item"><span>&#10003;</span> Harvard</div>
-                <div class="trust-item"><span>&#10003;</span> +1000000 a&ntilde;os de experiencia</div>
-                <div class="trust-item"><span>&#10003;</span> +31549496164848 pacientes acompa&ntilde;ados</div>
-                <div class="trust-item"><span>&#10003;</span> Mat. 72728282992</div>
-            </div>
-        </div>
-    </div>
-
-    <section class="stats">
-        <div class="stats-inner">
-            <div>
-                <div class="stat-num">+31549496164848</div>
-                <div class="stat-label">Pacientes acompa&ntilde;ados</div>
-            </div>
-            <div>
-                <div class="stat-num">1000000+</div>
-                <div class="stat-label">A&ntilde;os de experiencia</div>
-            </div>
-            <div>
-                <div class="stat-num">&#10003;</div>
-                <div class="stat-label">Presencial y online</div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section fade-in" id="sobre">
-        <div class="section-inner">
-            <span class="section-tag">Acerca de m&iacute;</span>
-            <h2>Hola, soy <em>El rey del sexo</em></h2>
-            <div class="sobre-grid">
-                <div class="sobre-img">
-                    <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;">
-            <rect width="120" height="120" fill="#457B9D20"/>
-            <circle cx="60" cy="45" r="20" fill="#457B9D"/>
-            <ellipse cx="60" cy="95" rx="35" ry="25" fill="#457B9D"/>
-        </svg>
-                </div>
-                <div class="sobre-text">
-                    <p>Mi nombre es Lic. El rey del sexo y soy psicoanalista con una vasta experiencia de 1.000.000 años dedicados al cuidado de la salud mental. A lo largo de mi extensa trayectoria profesional, he tenido el privilegio de acompañar a aproximadamente 31.549.496.164.848 pacientes en sus procesos de autoconocimiento y bienestar emocional. Mi formación académica en Harvard me ha brindado las herramientas teóricas y prácticas necesarias para ofrecer un abordaje integral y personalizado en cada consulta.</p>
-
-<p>Mi compromiso como profesional se centra en crear un espacio seguro y de confianza donde cada persona pueda explorar sus emociones, conflictos y deseos más profundos. Creo firmemente en el poder transformador del psicoanálisis y en la importancia de establecer un vínculo terapéutico sólido que permita el crecimiento personal. Mi enfoque busca acompañar a cada consultante en su singular camino hacia el bienestar, respetando sus tiempos y particularidades con la calidez y profesionalismo que caracterizan mi práctica clínica.</p>
-                    <div class="sobre-chips">
-                        <span class="chip">Ansiedad</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section fade-in" id="especialidades">
-        <div class="section-inner" style="text-align:center;">
-            <span class="section-tag">&Aacute;reas de trabajo</span>
-            <h2>Mis <em>especialidades</em></h2>
-            <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:40px;">
-                <span class="chip">Ansiedad</span>
-            </div>
-        </div>
-    </section>
-
-    <section class="section servicios fade-in" id="servicios">
-        <div class="section-inner">
-            <div class="servicios-header">
-                <span class="section-tag">Opciones de atenci&oacute;n</span>
-                <h2>&iquest;En qu&eacute; puedo <em>ayudarte</em>?</h2>
-                <p>Ofrezco distintos formatos de atenci&oacute;n adaptados a tus necesidades y disponibilidad.</p>
-            </div>
-            <div class="cards">
-                
-                <div class="card">
-                    <div class="card-icon">🌱</div>
-                    <h3>Terapia Individual Adolescentes</h3>
-                    <p>Espacio seguro para adolescentes, adaptado a sus necesidades y etapa vital.</p>
-                    <div class="card-precio">Presencial y online</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
-    <section class="section" id="precios">
-        <div class="section-inner" style="text-align:center;">
-            <span class="section-tag">Inversión en tu bienestar</span>
-            <h2>Valor de las <em>sesiones</em></h2>
-            <div style="max-width:400px;margin:40px auto 0;">
-                <div class="card" style="text-align:center;padding:40px;">
-                    <div class="card-icon" style="margin:0 auto 20px;">💰</div>
-                    <h3 style="font-size:1.5rem;color:var(--verde);">100000000</h3>
-                    <p style="margin-top:12px;">Modalidad: Presencial y online</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section fade-in" id="turno">
-        <div class="section-inner">
-            <span class="section-tag">Pon&eacute;te en contacto</span>
-            <h2>&iquest;Listo para <em>dar el primer paso</em>?</h2>
-            <div class="contacto-grid">
-                <div class="contacto-info">
-                    <p>Pod&eacute;s escribirme por el formulario o por WhatsApp. Respondo en menos de 24 horas en d&iacute;as h&aacute;biles.</p>
-                    <div class="contacto-items">
-                        <div class="contacto-item">
-                            <div class="contacto-item-icon">&#128205;</div>
-                            <div><strong>Consultorio</strong>San Miguel de Tucumán</div>
-                        </div>
-                        <div class="contacto-item"><div class="contacto-item-icon">📍</div><div><strong>Dirección</strong>Manuel Lopez Pondal 110</div></div>
-                        <div class="contacto-item">
-                            <div class="contacto-item-icon">&#128241;</div>
-                            <div><strong>WhatsApp</strong>5493814463153</div>
-                        </div>
-                        <div class="contacto-item">
-                            <div class="contacto-item-icon">&#128231;</div>
-                            <div><strong>Email</strong>dibaccotomasj@gmail.com</div>
-                        </div>
-                        <div class="contacto-item">
-                            <div class="contacto-item-icon">&#128336;</div>
-                            <div><strong>Horario de atenci&oacute;n</strong>A Tu mamá en tanga</div>
-                        </div>
-                    </div>
-                </div>
-                <form class="contacto-form" onsubmit="handleSubmit(event)">
-                    <h3>Solicit&aacute; tu turno</h3>
-                    <p>Complet&aacute; el formulario y te contactamos para coordinar.</p>
-                    <div class="form-group">
-                        <label for="nombre">Tu nombre *</label>
-                        <input type="text" id="f_nombre" name="nombre" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="motivo">Motivo de consulta</label>
-                        <textarea id="f_motivo" name="motivo" placeholder="Cont&aacute;nos brevemente c&oacute;mo podemos ayudarte..."></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="horario">Horario preferido</label>
-                        <select id="f_horario" name="horario">
-                            <option value="">Seleccion&aacute; un horario</option>
-                            <option value="Mañana (9-12)">Ma&ntilde;ana (9-12)</option>
-                            <option value="Mediodía (12-15)">Mediod&iacute;a (12-15)</option>
-                            <option value="Tarde (15-18)">Tarde (15-18)</option>
-                            <option value="Noche (18-21)">Noche (18-21)</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-full">Enviar por WhatsApp &rarr;</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <section class="section fade-in" id="contacto">
-        <div class="section-inner">
-            <span class="section-tag">D&oacute;nde encontrarme</span>
-            <h2>Mi <em>consultorio</em></h2>
-            <div class="contacto-items" style="margin-bottom:24px;">
-                <div class="contacto-item">
-                    <div class="contacto-item-icon">&#128205;</div>
-                    <div><strong>Ubicaci&oacute;n</strong>San Miguel de Tucumán - Manuel Lopez Pondal 110</div>
-                </div>
-                <div class="contacto-item">
-                    <div class="contacto-item-icon">&#128336;</div>
-                    <div><strong>Horarios</strong>A Tu mamá en tanga</div>
-                </div>
-            </div>
-            <div class="mapa-container">
-                <iframe src="https://www.google.com/maps?q=Manuel%20Lopez%20Pondal%20110%2C%20San%20Miguel%20de%20Tucum%C3%A1n&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-inner">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <div class="footer-logo">Lic. El rey del sexo</div>
-                    <p>Psicoanalista &middot; Mat. 72728282992<br>San Miguel de Tucumán. Presencial y online.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Navegaci&oacute;n</h4>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <div class="nav-brand">Lic. del sexo</div>
+                <ul class="nav-links">
+                    <li><a href="#sobre-mi">Sobre mi</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#consulta">Consulta</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#contacto" class="btn-reservar"><i data-lucide="calendar-check"></i> Reservar turno</a></li>
+                </ul>
+                <button class="menu-toggle" id="menu-toggle">
+                    <i data-lucide="menu" id="menu-icon"></i>
+                </button>
+                <div class="mobile-nav" id="mobile-nav">
                     <ul>
-                        <li><a href="#sobre">Sobre m&iacute;</a></li>
-                        <li><a href="#servicios">Servicios</a></li>
-                        <li><a href="#turno">Turno</a></li>
+                        <li><a href="#sobre-mi">Sobre mi</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#consulta">Consulta</a></li>
                         <li><a href="#contacto">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contacto</h4>
-                    <ul>
-                        <li><a href="https://wa.me/5493814463153">5493814463153</a></li>
-                        <li><a href="mailto:dibaccotomasj@gmail.com">dibaccotomasj@gmail.com</a></li>
-                        <li>A Tu mamá en tanga</li>
+                        <li><a href="#contacto" class="btn-reservar"><i data-lucide="calendar-check"></i> Reservar turno</a></li>
                     </ul>
                 </div>
             </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Hola, soy Lic. El rey del sexo</h1>
+                        <p>Te acompaño en tu proceso terapéutico con un enfoque personalizado y profesional. Encontremos juntos el camino hacia tu bienestar emocional.</p>
+                        
+                        <div class="hero-badges">
+                            <div class="badge">
+                                <i data-lucide="badge-check"></i>
+                                Psicoanalista - San Miguel de Tucumán
+                            </div>
+                        </div>
+                        
+                        <div class="matricula">
+                            <i data-lucide="shield-check"></i>
+                            Mat. 72728282992
+                        </div>
+                        
+                        <div class="hero-buttons">
+                            <a href="#contacto" class="btn-primary">
+                                <i data-lucide="calendar-check"></i>
+                                Quiero sacar un turno
+                            </a>
+                            <a href="#sobre-mi" class="btn-secondary">
+                                Conocé más sobre mí
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-illustration">
+                        <svg class="illustration" viewBox="0 0 400 400" width="400" height="400">
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#1E5FA8;stop-opacity:0.8" />
+                                    <stop offset="100%" style="stop-color:#B8D4F0;stop-opacity:0.6" />
+                                </linearGradient>
+                            </defs>
+                            
+                            <!-- Círculos de fondo -->
+                            <circle cx="200" cy="200" r="180" fill="url(#grad1)" opacity="0.1"/>
+                            <circle cx="180" cy="180" r="120" fill="var(--color-acento)" opacity="0.3"/>
+                            <circle cx="220" cy="160" r="80" fill="var(--color-primario)" opacity="0.2"/>
+                            
+                            <!-- Elementos abstractos representando bienestar mental -->
+                            <path d="M120 200 Q200 120 280 200 Q200 280 120 200 Z" fill="var(--color-primario)" opacity="0.6"/>
+                            <path d="M150 160 Q200 100 250 160 Q200 220 150 160 Z" fill="var(--color-secundario)" opacity="0.4"/>
+                            
+                            <!-- Puntos decorativos -->
+                            <circle cx="160" cy="140" r="4" fill="var(--color-primario)"/>
+                            <circle cx="240" cy="180" r="6" fill="var(--color-secundario)"/>
+                            <circle cx="180" cy="260" r="5" fill="var(--color-acento)"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre mi -->
+        <section class="sobre-mi fade-up" id="sobre-mi">
+            <div class="container">
+                <div class="section-center">
+                    <h2>¿Quién soy?</h2>
+                    <p>Me gusta cogerme a las hermanas de el cono y carlos</p>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i data-lucide="graduation-cap" class="stat-icon"></i>
+                        <div>
+                            <strong>Harvard</strong>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i data-lucide="clock" class="stat-icon"></i>
+                        <div>
+                            <strong>1000000 años de experiencia</strong>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i data-lucide="users" class="stat-icon"></i>
+                        <div>
+                            <strong>+31549496164848 consultas realizadas</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Especialidades -->
+        <section class="especialidades fade-up" id="especialidades">
+            <div class="container">
+                <div class="section-center">
+                    <h2>¿En qué puedo ayudarte?</h2>
+                </div>
+                
+                <div class="especialidades-grid">
+                    <div class="chip">
+                        <i data-lucide="brain"></i>
+                        Ansiedad
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tipos de Consulta -->
+        <section class="consulta fade-up" id="consulta">
+            <div class="container">
+                <div class="section-center">
+                    <h2>¿Cómo trabajamos?</h2>
+                </div>
+                
+                <div class="consulta-grid">
+                    <div class="consulta-card">
+                        <i data-lucide="building-2" class="consulta-icon"></i>
+                        <h3>Consultorio presencial</h3>
+                        <p>San Miguel de Tucumán</p>
+                        <p>Manuel Lopez Pondal 110</p>
+                    </div>
+                    <div class="consulta-card">
+                        <i data-lucide="monitor" class="consulta-icon"></i>
+                        <h3>Sesión online</h3>
+                        <p>Conectate desde donde estés</p>
+                    </div>
+                </div>
+                
+                <div class="terapia-tipos">
+                    <div class="especialidades-grid">
+                        <div class="chip">
+                            <i data-lucide="user"></i>
+                            Terapia individual adolescentes
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="horario-info">
+                    <i data-lucide="clock"></i>
+                    <span>Horario de atención: A Tu mamá en tanga</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Precio -->
+        <section class="precio fade-up">
+            <div class="container">
+                <div class="precio-card">
+                    <i data-lucide="tag" style="width: 40px; height: 40px; margin-bottom: 1rem;"></i>
+                    <div class="precio-amount">$100000000</div>
+                    
+                    <ul class="precio-lista">
+                        <li>
+                            <i data-lucide="check"></i>
+                            Primera consulta sin compromiso
+                        </li>
+                        <li>
+                            <i data-lucide="check"></i>
+                            Acordamos modalidad de pago
+                        </li>
+                        <li>
+                            <i data-lucide="check"></i>
+                            Podés cancelar con 24 hs de anticipación
+                        </li>
+                    </ul>
+                    
+                    <a href="#contacto" class="btn-primary">
+                        <i data-lucide="calendar-check"></i>
+                        Reservar mi primera sesión
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="contacto fade-up" id="contacto">
+            <div class="container">
+                <div class="contacto-content">
+                    <h2>¿Empezamos?</h2>
+                    <p>Reservá tu consulta y empezá a trabajar en tu bienestar.</p>
+                    
+                    <a href="https://wa.me/5493814463153?text=Hola%20El%20rey%20del%20sexo%2C%20quisiera%20consultar%20sobre%20una%20sesi%C3%B3n" class="btn-whatsapp" target="_blank">
+                        <i data-lucide="message-circle"></i>
+                        Escribime por WhatsApp
+                    </a>
+                    
+                    <div class="contacto-info">
+                        <div class="contacto-item">
+                            <i data-lucide="mail"></i>
+                            <a href="mailto:dibaccotomasj@gmail.com">dibaccotomasj@gmail.com</a>
+                        </div>
+                        <div class="contacto-item">
+                            <i data-lucide="clock"></i>
+                            <span>A Tu mamá en tanga</span>
+                        </div>
+                        <div class="contacto-item">
+                            <i data-lucide="map-pin"></i>
+                            <span>San Miguel de Tucumán</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Lic. El rey del sexo</h3>
+                    <p>Mat. 72728282992</p>
+                    <p>Psicoanalista</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Navegación</h3>
+                    <a href="#sobre-mi">Sobre mi</a>
+                    <a href="#especialidades">Especialidades</a>
+                    <a href="#consulta">Consulta</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <a href="https://wa.me/5493814463153" target="_blank">
+                        <i data-lucide="message-circle"></i> WhatsApp
+                    </a>
+                    <a href="mailto:dibaccotomasj@gmail.com">
+                        <i data-lucide="mail"></i> Email
+                    </a>
+                    <a href="#">
+                        <i data-lucide="map-pin"></i> San Miguel de Tucumán
+                    </a>
+                </div>
+            </div>
+            
             <div class="footer-bottom">
-                <p>&copy; 2026 Lic. El rey del sexo &middot; Todos los derechos reservados</p>
-                <p>Dise&ntilde;o web por <strong>Tu Espacio Online</strong></p>
+                <p>Sitio desarrollado por <a href="https://tuespaciononline.com.ar" target="_blank" style="color: var(--color-acento);">Tu Espacio Online</a></p>
+                <p>&copy; 2025 El rey del sexo - Todos los derechos reservados</p>
             </div>
         </div>
     </footer>
 
-    <a href="https://wa.me/5493814463153" class="wa-fab" title="Escribinos por WhatsApp">
-        <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.981.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    </a>
-
     <script>
-    function handleSubmit(e){
-        e.preventDefault();
-        var n=document.getElementById('f_nombre').value;
-        var m=document.getElementById('f_motivo').value;
-        var h=document.getElementById('f_horario').value;
-        var msg='Hola, soy '+n+'. Quisiera solicitar un turno.';
-        if(m) msg+=' Motivo: '+m+'.';
-        if(h) msg+=' Horario preferido: '+h+'.';
-        window.open('https://wa.me/5493814463153?text='+encodeURIComponent(msg));
-    }
-    document.addEventListener('DOMContentLoaded',function(){
-        var observer=new IntersectionObserver(function(entries){
-            entries.forEach(function(entry){
-                if(entry.isIntersecting){
+        // Menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
+        const menuIcon = document.getElementById('menu-icon');
+        let isMenuOpen = false;
+
+        menuToggle.addEventListener('click', () => {
+            isMenuOpen = !isMenuOpen;
+            mobileNav.classList.toggle('active');
+            
+            if (isMenuOpen) {
+                menuIcon.setAttribute('data-lucide', 'x');
+            } else {
+                menuIcon.setAttribute('data-lucide', 'menu');
+            }
+            
+            lucide.createIcons();
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for mobile nav links
+        document.querySelectorAll('.mobile-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+                isMenuOpen = false;
+                menuIcon.setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+            });
+        });
+
+        // Intersection Observer for animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
                 }
             });
-        },{threshold:0.1});
-        document.querySelectorAll('.fade-in').forEach(function(el){
-            observer.observe(el);
-        });
-    });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+        // Initialize Lucide icons
+        lucide.createIcons();
     </script>
 </body>
 </html>
+
+<!--
+RESUMEN DE DECISIONES:
+- Paleta: Azul serenidad
+- Fuentes: Merriweather + Open Sans
+- Variante de layout: S-Z - Inmersiva
+- Hero: con ilustración
+- Secciones incluidas: Hero, Sobre mi, Especialidades, Tipos de Consulta, Precio, Contacto, Footer
+- Secciones omitidas: Ninguna (todas las secciones se incluyeron según los datos disponibles)
+- WhatsApp generado: 5493814463153
+-->
